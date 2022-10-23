@@ -1,36 +1,58 @@
 1. Enter the number of hours it took you to complete the project between
    the <<< and >>> signs below (eg, <<<10>>>).
 
-   <<< >>>
+   <<<3>>>
    
 2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
    between the <<< and >>> signs below (eg, <<<3>>>).
 
-   <<< >>>
+   <<<3>>>
 
 3. Did you receive help from anyone? List their names, status (classmate, 
    CS110 grad, TA, other), and the nature of help received.
 
    Name               Status       Help Received
-   ----               ------       -------------
+   Yoni               classmate      Discussed how to get the number from the file (generate waltz)
 
-   ...                ...          ...
+   Prabin                TA          Discussed the appoach you should take in solving the problem (play waltz)
 
 4. Provide a short description of how you approached each problem, issues you 
    encountered, and how you resolved those issues.
 
    Problem 1 (Generating the Waltz)
-      Approach: ...
+      Approach: In this problem first I need to create two 2d arrays to match the numbers in the file by using
+      create2d and store zeros in it as placeholders. Then I looped through the 2d array and replaced each 0 in
+      the 2d array to a numbers in the file. After that I looped through the columns of the array of numbers and
+      randomly rolled dice to chose two rows from the array of numbers and add them together. Lastly I stored
+      the exact value of the row and column into a variable and displayed it onto the terminal.
 
-      Issues and resolution: ...
+      Issues and resolution: I had difficulty with trying to figure out how to be able to replace the numbers
+      in the 2d array to the numbers in the file. It was causing me to try to loop through the rows and columns
+      of the array separately for each them. Doing that caused me to have trouble replacing the zeros in the array at
+      the same time. But found out that I should have used a nested for loop on the 2d arrays to replace he numbers.
+      for i in range(11): and  for j in range(16) inside. After fixing it, I was able to add the numbers into
+      the nested loop.
 
    Problem 2 (Playing the Waltz)
-      Approach: ...
+      Approach: First I stored the numbers that are in the file mozart into a variable. Then I made sure that
+      the measure was not 32 using an if and an exit statement. len(waltz) != 32: sys.exit. After that I
+      looped through the first 16 minutes and exited if the number was greater 176 and less than 1. Also
+      looped through the last 16 minutes and exited if the number was greater 96 and less than 1. Lastly I
+      looped through each minute and played the sound using from the file name and the number.
 
-      Issues and resolution: ...
+      Issues and resolution: This problem did not have too many issues I had to face. The most difficult
+      part of this problem was trying to understand figure out what the problem asking me to do. The code was
+      not especially complicated but figuring out the problem was. It was causing me to use the if statements
+      and for loops for from 0-32. This caused the program not play because some numbers that did not
+      match the sound. But I found that doing 1-16 and 16-32 loops and if statements separately. After
+      fixing it, my code was clearner, and I was able to fix my errors better.
 
 5. List any other comments here. Feel free to provide any feedback on how
    much you learned from doing the assignment, and whether you enjoyed
    doing it.
 
-   ...
+   This project was difficult, but I learned alot through it. It allowed me to put the skills that I learned
+   in class to practice. It did not take as long as I expect because of the less amount of problems. Also,
+   some exercises were more time-consuming and difficult than problem 2. The programming I have been learning
+   in class made it easier to understand and figure out. Also, my problem-solving skills has gotten alot better
+   since the first project we did.
